@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Face Recognition App 👥🔍
+[View Live](https://face-recognition-app-i3x0.onrender.com/) ♂️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Face Recognition App, an application that leverages the power of face recognition technology to provide a secure and user-friendly experience. This project includes user authentication features, face detection using the Clarifai API, and storage of user information in a PostgreSQL database.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### 1. User Authentication
+The app implements user authentication features, including registration, login, and logout functionalities. Users can create accounts, securely log in, and log out when they're done.
 
-### `npm start`
+### 2. Face Recognition with Clarifai API
+Utilizing the Clarifai API, the app is capable of detecting faces in images. A distinctive blue-colored box is drawn around the detected faces, providing an interactive and visually appealing experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 3. User-Friendly Interface
+The application boasts a user-friendly interface displaying the name of the user and their recognition score. Additionally, an input field allows users to enter an image URL, and the application dynamically displays the image at the bottom of the input.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 4. PostgreSQL Integration
+User information and application data are securely stored in a PostgreSQL database. This ensures data integrity, reliability, and provides a robust foundation for managing user accounts and related information.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React**: The frontend of the application is built using React, ensuring a dynamic and responsive user interface.
+- **Clarifai API**: The Clarifai API is integrated to enable face recognition capabilities.
+- **PostgreSQL**: The app utilizes PostgreSQL to securely store user information and application data.
+- **Node.js / Express**: The backend server is built using Node.js and Express to handle authentication and database interactions.
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To get started with the Face Recognition App, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/Bhavna2003/face-recognition-app.git
+   cd face-recognition-app
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+3. **Configure Environment Variables:**
+   Create a `.env` file in the project root and add the necessary environment variables (database connection details, Clarifai API key, etc.).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Run the Application:**
+   ```bash
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   The application will be accessible at `http://localhost:3000` in your web browser.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Acknowledgments
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Clarifai API documentation: [Clarifai Docs](https://docs.clarifai.com/).
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Enjoy using the Face Recognition App! 👥🔍
